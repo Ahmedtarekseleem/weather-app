@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="main-bg min-vh-100 ">
+        <div class="container w-75  position-relative overflow-hidden">
+            <nav class="navbar navbar-expand-lg  text-white my-5 ">
+                <div class="container-fluid ">
+                    <a class="navbar-brand d-flex align-items-center " href="#">
+                        <img src="image/logo@2x.png" class="w-25" alt="">
+                        <div class="ms-3">
+
+                            <p class=" text-white m-0 roborto-font fw-bold fs-6">Weather</p>
+                            <p class=" diff m-0 roborto-font">tagline goes here</p>
+
+                        </div>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item rounded-5 ms-3">
+                                <a class="nav-link py-1 active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item rounded-5 ms-3">
+                                <a class="nav-link py-1" href="#">News</a>
+                            </li>
+                            <li class="nav-item rounded-5 ms-3">
+                                <a class="nav-link py-1" href="#">Live camera</a>
+                            </li>
+                            <li class="nav-item rounded-5 ms-3">
+                                <a class="nav-link py-1" href="#">Photos</a>
+                            </li>
+                            <li class="nav-item rounded-5 ms-3">
+                                <a class="nav-link py-1" href="#">Contact</a>
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+
+
+        <!-- <div> -->
+
+
+        <div class="">
+            <div class="bg-burner">
+
+                <div class="container   w-75">
+
+                    <form action="" class=" position-relative">
+
+                        <input type="text"
+                            class="form-control searchInput mt-4  border-0 ps-4 rounded-5 main-bg text-success py-3 m-auto"
+                            placeholder="Find your location" name="" id="">
+                        <input type="button" value="Find"
+                            class="btn position-absolute bg-blue search-butt rounded-5 text-white " id="submit">
+                    </form>
+                </div>
+            </div>
+            <!-- </div> -->
+
+            <div class="container  w-75 ">
+                <div class=" mb-max mb-5 ">
+                    <div class="row gx-0   text-white  bg-light-grey rounded-3 border-0 ">
+                        <div class="col-md-4  ">
+                            <div class="">
+
+                                <div
+                                    class="td-bg text-white rounded-top-left py-2 d-flex justify-content-between align-items-center">
+                                    <p class="mb-0 ps-2 dayName ">wendsdy</p>
+                                    <p class="mb-0 pe-2 daynum">25</p>
+                                </div>
+                                <div class="p-3">
+                                    <p id="countryLocation">Cairo </p>
+                                    <p class="dgree-font"><span id="todayDegree">37.2</span><sup>o</sup>C</p>
+
+                                    <img src="" id="todayImag" alt="" width="90">
+                                    <p class="text-blue fs-14-fw-300 condition-today">Partly cloudy </p>
+                                    <div class="pb-3 ">
+
+                                        <span> <img src="image/icon-umberella.png" class="w-10" alt=""> <span
+                                                id="humidity">15</span>%</span>
+                                        <span class="px-3"> <img src="image/icon-wind.png" class="w-10" alt=""> <span
+                                                class="windSpeed">18</span>km/h</span>
+                                        <span> <img src="image/icon-compass.png" class="w-10" alt=""> <span
+                                                class="compass">East</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 bg-dark-grey  ">
+
+                            <div class="top-bg py-2 text-white text-center">
+                                <p class="mb-0 day2">Thursday </p>
+
+                            </div>
+                            <div class=" py-1">
+                                <div class="py-5 my-5 d-flex justify-content-center align-items-center flex-column">
+                                    <img class="w-10 img2 " src="image/113.png" alt="">
+
+                                    <p class="mb-0 font-two"><span
+                                            class="maxtemp2">37.2</span><sup>o</sup>C
+                                    </p>
+                                    <p class="fs-16-fw-300"> <span class="mintemp">37.2</span><sup>o</sup></p>
+                                    <p class="text-blue fs-14-fw-300" id="conditionText2">Sunny </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4   ">
+
+                            <div class="td-bg py-2 text-white  rounded-top-right text-center">
+                                <p class="mb-0 day3">Thursday </p>
+
+                            </div>
+                            <div class=" py-1">
+                                <div class="py-5 my-5 d-flex justify-content-center align-items-center flex-column">
+                                    <img src="image/113.png" class="w-10 img3 " alt="">
+
+                                    <p class="mb-0 font-two"><span class="maxtemp3">37.2</span><sup>o</sup>C</p>
+                                    <p class="fs-16-fw-300 "><span class="mintemp3">37.2</span><sup>o</sup></p>
+                                    <p class="text-blue fs-14-fw-300" id="conditionText3">Sunny </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bg">
+            <div class="container py-5 w-75">
+                <form action="" class="position-relative w-md-75">
+
+                    <input type="text"
+                        class="form-control  mt-4  border-0 ps-4 rounded-5 main-bg text-success py-3 m-auto"
+                        placeholder="Enter Your Email to Subscribe..." name="" id="">
+                    <input type="button" value="Find"
+                        class="btn position-absolute bg-blue search-butt rounded-5 text-white " id="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
