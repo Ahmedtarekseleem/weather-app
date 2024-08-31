@@ -1,1 +1,1 @@
-live: https://ahmedtarekseleem.github.io/weather-app/
+ live: https://ahmedtarekseleem.github.io/weather-app/
